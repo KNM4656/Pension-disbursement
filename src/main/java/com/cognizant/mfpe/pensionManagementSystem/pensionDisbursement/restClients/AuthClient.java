@@ -9,7 +9,7 @@ import com.cognizant.mfpe.pensionManagementSystem.pensionDisbursement.model.Auth
 /**
  * To access Authorization Microservice
  */
-@FeignClient(name = "authorization-service", url = "http://authorization-environ.eba-gxumxq57.ap-south-1.elasticbeanstalk.com")
+@FeignClient(name = "authorization-service", url = "http://localhost:9095")
 public interface AuthClient {
 
 	@GetMapping("/validate")
